@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProtexUV | UV Radiation Prevention</title>
+  <meta name="description" content="ProtexUV is a preventive digital platform that helps workers reduce occupational exposure to UV radiation through real-time data, QR codes, and smart alerts." />
+  <style>
+    :root {
+      --primary: #0B5ED7;
+      --secondary: #FFC107;
+      --danger: #DC3545;
+      --dark: #1F2937;
+      --light: #F9FAFB;
+      --gray: #6B7280;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #0d3f91);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--secondary);
+      color: var(--dark);
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--primary);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+
+    .card p {
+      color: var(--gray);
+    }
+
+    .steps {
+      counter-reset: step;
+    }
+
+    .step {
+      position: relative;
+      padding-left: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2rem;
+      height: 2rem;
+      background-color: var(--primary);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    footer p { opacity: 0.8; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <h1>ProtexUV</h1>
+    <p>Digital prevention platform to reduce occupational exposure to ultraviolet radiation through real-time information, QR technology, and smart alerts.</p>
+    <a href="#features" class="btn">Discover the Solution</a>
+  </header>
+
+  <!-- PROBLEM -->
+  <section>
+    <h2>The Problem</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>High UV Exposure</h3>
+        <p>Chile presents some of the highest UV radiation levels worldwide, significantly affecting outdoor workers.</p>
+      </div>
+      <div class="card">
+        <h3>Low Risk Awareness</h3>
+        <p>Many workers underestimate UV radiation, associating it only with sunburn and not with long-term diseases.</p>
+      </div>
+      <div class="card">
+        <h3>Lack of Practical Tools</h3>
+        <p>Companies often lack simple, real-time systems to support preventive decision-making in the field.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <h2>How ProtexUV Works</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>Scan the QR Code</h3>
+        <p>Workers scan a QR code located at their workstation using any smartphone.</p>
+      </div>
+      <div class="step">
+        <h3>Check UV Index in Real Time</h3>
+        <p>The platform displays the current UV index with clear color-based risk levels.</p>
+      </div>
+      <div class="step">
+        <h3>Receive Preventive Recommendations</h3>
+        <p>Automatic alerts suggest PPE use, exposure limits, hydration, and breaks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE -->
+  <section>
+    <h2>Value Proposition</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>For Workers</h3>
+        <p>Clear, immediate, and visual information that empowers self-care and reduces health risks.</p>
+      </div>
+      <div class="card">
+        <h3>For Companies</h3>
+        <p>Improved regulatory compliance, reduced absenteeism, and stronger preventive culture.</p>
+      </div>
+      <div class="card">
+        <h3>For Prevention Teams</h3>
+        <p>Automatic records, usage metrics, and data-driven support for decision-making.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <h2>Protect Your Workforce from UV Risks</h2>
+    <p style="text-align:center; max-width:700px; margin:0 auto 2rem; color:var(--gray);">
+      ProtexUV transforms UV radiation control into a simple, accessible, and effective preventive standard for outdoor work environments.
+    </p>
+    <div style="text-align:center;">
+      <a href="#" class="btn">Request a Demo</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 ProtexUV. Occupational UV Radiation Prevention Platform.</p>
+  </footer>
+
+</body>
+</html>
